@@ -1,0 +1,476 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>TECHROID - Technology so fast, it roids!</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<style type="text/css">@import url("css/style.css");</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lato:100,200,300,400);
+
+
+</style>
+
+<!-- Custom Theme files -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pioneer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>	
+	  <!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---css-style-switecher----->
+		<script type="text/javascript" src="js/jsapi"></script>
+		<script>
+		google.setOnLoadCallback(function()
+			{
+			    // Color changer
+			    $(".colorblue").click(function(){
+			        $("link").attr("href", "css/blue.css");
+			        return false;
+			    });
+			    
+			    $(".colorrose").click(function(){
+			        $("link").attr("href", "css/rose.css");
+			        return false;
+			    });
+			    
+			    $(".colorgreen").click(function(){
+			        $("link").attr("href", "css/green.css");
+			        return false;
+			    });
+			
+			});
+		</script>
+		<!---//End-css-style-switecher----->
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header" id="home" style="height: 750px">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="top-menu">
+				<span class="menu"> </span>
+					<ul>
+						<li><a class="active scroll" href="#home">Home</a></li>
+						<li><a class="scroll" href="#about">About</a></li>
+						<li><a class="scroll" href="#services">Services</a></li>
+						<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+						<li><a class="scroll" href="#blog">Blog</a></li>
+						<li><a class="scroll" href="#shortcodes">Shortcodes</a></li>
+						<li><a class="scroll" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+						<!-- script-for-menu -->
+						<script>
+							$("span.menu").click(function(){
+								$(".top-menu ul").slideToggle("slow" , function(){
+								});
+							});
+						</script>
+						<!-- script-for-menu -->
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="header-info text-center" >
+				<h1  style="color: #3d3d3d; font-family: 'Lato'; font-size:6.2em; font-weight: 300">Have an Idea?</h1>
+				<h1 style="color: #3d3d3d; font-size: 3.2em; line-height: 1.5; font-family: 'Lato'; font-weight: 300" >LET'S TURN INTO  REALITY!</h1>
+				<br><img src="images/idea.png"><br><br><br><br>
+				<a class="scroll"  href="#services"><img src="images/go_down.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="about" class="about-us-idea" style="background: url('images/Ideas_background.jpg') no-repeat 0px 0px;background-size: cover; height: 650px">
+		<div class="text-center" style="padding: 20px">
+					<h3 style="margin-top: 30px;background: url('images/head_down.png') no-repeat 540px 50px;padding-bottom: 1.2em;font-family: 'Roboto', sans-serif;color: #303030;font-size: 2.25em;font-weight: 700;">ABOUT US</h3>
+		</div>
+	<h1  style="color: #3d3d3d; font-family: 'Lato'; font-size:3.2em; font-weight: 300; width: 45%; padding: 20px; margin-left: 30px; margin-top: 30px">
+	We are technology company offering our services for web and mobile with the wide technology exposure that covers almost every cutting edge framework, language and tool
+	
+	</h1>
+	
+	</div><!-- end of about us-->
+	
+	
+	
+	<div class="main-part">
+		<div class="services-section" id="services">
+			<div class="container">
+				<div class="services-section-head text-center">
+					<h3>SERVICES</h3>
+				</div>
+				<div class="services-section-grids">
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="event"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Product Development</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>
+						 We can take idea from the back of the napkin and make it happen.. LITERALLY!. Our team has participated in the development of 700+ Products for our clients
+						</p>
+					</div>
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="needs"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Solution Engineering</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>Usually the most frequent job our engineers perform where the work flow is already developed from the external team or client and our Engineers just make it happen. </p>
+					</div>
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="gender"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Re-Engineering</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>Optimizing slow systems or scale it for millions of users... Our team is specialized in producing highly available and optimized solutions and turning / scaling existing into the optimized one. </p>
+					</div>
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="photo"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Virtual Teams</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>Create your own Virtual Team... hire the best Engineers. Team Techroid consist of Engineers trained in multiple technology stacks.   </p>
+					</div>
+					<div class="col-md-4 services-section-grid">
+						<div class="services-section-grid-head">
+							<div class="service-icon">
+								<i class="education"></i>
+							</div>
+							<div class="service-icon-heading">
+								<h4>Maintenance & Support</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>From Incremental support to 27/4 SLA, we have got your back. Contact us to discuss the support plan that suits your apps the most. </p>
+					</div>
+					
+				<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+			<div class="about-section" id="about2">
+				<div class="about-top">
+					<div class="container">
+						<div class="col-md-3 about-grid text-center">
+							<i class="volunteer"></i>
+							<h5>700+ Projects</h5>
+						</div>		
+						<div class="col-md-3 about-grid text-center">
+							<i class="idea"></i>
+							<h5>50+ Engineers</h5>
+						</div>	
+						<div class="col-md-3 about-grid text-center">
+							<i class="projects"></i>
+							<h5>172,600+ Development Hours  </h5>
+						</div>	
+						<div class="col-md-3 about-grid text-center">
+							<i class="work"></i>
+							<h5>32+ workshops</h5>
+						</div>		
+						<div class="clearfix"></div>	
+					</div>
+				</div>
+		<div class="projects-section" id="portfolio">
+				<div class="projects-section-head text-center">
+					<h3>PROJECTS</h3>
+				</div>
+				 <ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logos web">ALL</span></li>
+						<li><span class="filter" data-filter="app">Internal Products</span></li>
+						<li><span class="filter" data-filter="card">Web</span></li>
+						<li><span class="filter" data-filter="icon">Mobile</span></li>
+						</ul>
+					<div id="portfoliolist">
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-1.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-2.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>					
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+
+					</div>
+					
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-7.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-7.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+						</div>
+						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-8.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-8.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-9.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-9.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-10.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-10.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-11.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-11.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>	
+						</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-12.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-12.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>					
+<div class="clearfix"></div>					
+				</div>			
+<div class="clearfix"></div>	
+			</div>
+		
+			
+			<div class="subscribe text-center" id="shortcodes">
+				<div class="container">
+					<h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+					<input type="text" class="text" value="YOUR MAIL ADDRESS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'YOUR MAIL ADDRESS';}">
+					<input type="submit" value="Subscribe">
+				</div>
+			</div>
+		
+			<div class="clients">
+				<div class="container">
+					<ul>
+						<li><a href="#"><img src="images/behance.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="images/drop.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="images/row.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="images/facebook.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="images/microsoft.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="images/dell.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="contact-section" id="contact">
+				<div class="contact-section-head text-center">
+					<h3>GET IN TOUCH</h3>
+				</div>
+				<br><br>
+				<div class="contact-form">
+					<div class="container">
+						<form onsubmit="alert('We will contact you shortly');return false;">
+							<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" class="text" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}">
+							<textarea onfocus="if(this.value == 'Message:') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Message</textarea>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6801.362861731294!2d74.35605289222453!3d31.532908484135252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904e4a3a3968d%3A0xe2c8db1ccb97ed95!2sSiddiq+Trade+Center!5e0!3m2!1sen!2s!4v1435360814990" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			
+			<div class="footer-top">
+				<div class="container">
+					<div class="col-md-3 footer-grid">
+						<h4>About Us</h4>
+						<p>	We are technology company offering our services for web and mobile with the wide technology exposure that covers almost every cutting edge framework, language and tool
+.</p>
+					</div>
+				
+					<div class="col-md-3 footer-grid">
+						<h4>Contact Us</h4>
+						<ul class="address">
+							<li><i class="f_phone"></i></li>
+							<li>+92(356)33343</li>
+						</ul>
+						<ul class="address">
+							<li><i class="f_msg"></i></li>
+							<li><a href="info@techroid.co"> info@techroid.co</a></li>
+						</ul>
+						<ul class="address">
+							<li><i class="f_location"></i></li>
+							<li>P-67 Saidqe Trade Center, <br>Main Bolevard Gulberg, Lahore</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Flicker</h4>
+						<ul class="flkr">
+							<li><img src="images/f1.jpg" alt=""/ ></li>
+							<li><img src="images/f2.jpg" alt=""/ ></li>
+							<li><img src="images/f3.jpg" alt=""/ ></li>
+							<li><img src="images/f4.jpg" alt=""/ ></li>
+							<li><img src="images/f5.jpg" alt=""/ ></li>
+							<li><img src="images/f6.jpg" alt=""/ ></li>
+							<li><img src="images/f7.jpg" alt=""/ ></li>
+							<li><img src="images/f8.jpg" alt=""/ ></li>
+							<li><img src="images/f9.jpg" alt=""/ ></li>
+							<li><img src="images/f10.jpg" alt=""/ ></li>
+							<li><img src="images/f11.jpg" alt=""/ ></li>
+							<li><img src="images/f12.jpg" alt=""/ ></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>	
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="copyright text-center">
+						<p>Copyright &copy; 2015 All rights reserved </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
